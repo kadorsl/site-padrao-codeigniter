@@ -1,0 +1,196 @@
+/* ------------------------------------------------------------------
+Project: Insee
+Place here your custom CSS styles
+------------------------------------------------------------------ */
+
+.content-box-icon span{
+    color:#ffcb41;
+}
+.footer-area{
+    background: #f8f8f8;
+    border-top:1px solid #f3f3f3;
+    
+}
+.footer-area .pull-right > img{
+    margin-top: -15px;
+    margin-left: 25px;
+}
+.img-center{
+    float:none;
+    margin: 0 auto!important;
+}
+.breadcrum-area {
+  background: #f8f8f8 none repeat scroll 0 0;
+  padding: 15px 0 0px;
+}
+.navbar-custom .navbar-nav > *::before {
+  background: url(../img/list-item.png) no-repeat 0 0;
+  /*background: #ff0000 none repeat scroll 0 0;*/
+  border-radius: 50%;
+  content: "";
+  height: 13px;
+  left: 0;
+  margin-top: -1px;
+  margin-left: -5px;
+  opacity: 0;
+  position: absolute;
+  top: 43%;
+  transition: all 0.4s ease 0s;
+  width: 13px;
+}
+.filter > li a::after {
+  background: url(../img/list-item.png) no-repeat 0 0;
+  border-radius: 50%;
+  content: "";
+  height: 13px;
+  left: 0;
+  margin-left: -23px;
+  margin-top: -7px;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  transform: inherit;
+  transition: all 0.4s ease 0s;
+  width: 13px;
+}
+.filter > li a:hover::after, .filter > li a.current::after {
+  background: url(../img/list-item.png) no-repeat 0 0;
+  left: 6px;
+  opacity: 1;
+}
+.navbar-right {
+    margin-top: 35px;
+}
+ /* sticky menu
+----------------*/
+ body{
+     margin-top: 135px;
+ }
+ .header-top {
+     position: absolute;
+     top: 0;
+     width: 100%;
+     z-index: 99;
+     left: 0;
+ }
+ .header-top.is-sticky .ptb-50 {
+     padding-bottom: 15px;
+     padding-top: 15px;
+     -webkit-transition: all 0.4s ease 0s;
+     transition: all 0.4s ease 0s;
+ }
+ .header-top.is-sticky {
+     -webkit-animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+     animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+     background: #ffffff;
+     left: 0;
+     padding: 0px 0;
+     position: fixed;
+     top: 0;
+     width: 100%;
+     z-index: 999;
+     box-shadow: 0 1px 4px rgba(2, 3, 3, 0.1);
+     height: 80px;
+ }
+ .header-top.is-sticky .navbar-brand {
+     width: 160px;
+ }  
+  .header-top.is-sticky .navbar-right{
+     margin-top: 10px;
+ } 
+   .header-top.is-sticky  .mobile-menu-area{
+     margin-top: 10px;
+ } 
+ 
+ 
+ .work-caption > div {
+     border: 3px solid #ffcb05;
+     width: 50%;
+     margin: 0 auto;
+     padding: 15px;
+ }
+ .mobile-menu-area {
+     margin-top: 25px;
+ }
+ 
+ 
+.loader-interno {
+	
+	border-left: 2px solid #b2b2b2;
+	border-top: 2px solid rgba(245, 245, 245, 0.8);
+	border-right: 2px solid rgba(245, 245, 245, 0.8);
+	border-bottom: 2px solid rgba(245, 245, 245, 0.8);
+	height: 46px;
+	width: 46px;
+	font-size: 10px;
+        margin: 0 auto;
+	z-index: 9999;
+	-webkit-animation: load 0.8s infinite linear;
+	   -moz-animation: load 0.8s infinite linear;
+		 ms-animation: load 0.8s infinite linear;
+		  o-animation: load 0.8s infinite linear;
+			animation: load 0.8s infinite linear;
+}
+
+.loader-interno,
+.loader-interno:after {
+	border-radius: 50%;
+	width: 46px;
+	height: 46px;
+}
+.active-link {
+    color:#ffcb05;
+    text-decoration: underline;
+    
+}
+ /*--- [ Responsive Media Querries ] ---*/
+ 
+ @media (max-width: 1200px) {
+    .work-caption > div {
+        border: 3px solid #ffcb05;
+        width: 100%;
+        margin: 0 auto;
+        padding: 15px;
+    }     
+ }
+ 
+ 
+ 
+ 
+        /* OVERLAY VIDEO*/
+        .overlay {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, .5);
+            cursor: pointer;
+        }
+
+        .play {
+            width: 65px;
+            height: 65px;
+            margin: auto;
+            position: absolute;
+            top: 0;right: 0;bottom: 0;left: 0;
+            border-radius: 100%;
+            transition: all 0.5s ease;
+            cursor: pointer;
+            border: 5px solid #ffffff;
+            box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
+            background: #ffcb05;
+        }
+
+        .play:hover {
+            background: #bcbdc0;
+        }
+
+        .arrow {
+            width: 0;
+            height: 0;
+            margin: auto;
+            position: absolute;
+            top: 0;right: -4px;bottom: 0;left: 0;
+            border-top: 12px solid transparent;
+            border-bottom: 12px solid transparent;
+            border-left: 16px solid #ffffff;
+        }
